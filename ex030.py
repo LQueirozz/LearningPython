@@ -1,10 +1,10 @@
-#Exercício 30: Ano bissexto
+#Exercício 30: Par ou impar
 #Aprendendo sobre condicionais pt3
 
-ano=int(input('Digite um ano qualquer: '))
+n=int(input('Digite um inteiro qualquer maior do que 0: '))
 
-if(ano%4==0 and ano%100!=0):
-    print('O ano {} é bissexto!' .format(ano))
+if(n%2==0):
+    print('O número {} é par!' .format(n))
 
 else:
-    print('O ano {} não é bissexto!' .format(ano))
+    print('O número {} é impar!' .format(n))
