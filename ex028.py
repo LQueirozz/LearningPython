@@ -1,5 +1,5 @@
 #Exercício 28: Adivinhação simples
-#Aprendendo sobre condicionais
+#Aprendendo sobre condicionais pt1
 
 from random import randint
 
