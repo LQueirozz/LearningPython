@@ -1,5 +1,5 @@
-#Exercício 24: Verificando as primeiras letras de um texto
-#Aprendendo sobre manipulação de strings pt3
+#Exercício 25: Procurando uma substring
+#Aprendendo sobre manipulação de strings pt4
 
 nome = ( ( input("Qual o seu nome?: ") ).strip() ).lower() 
 
