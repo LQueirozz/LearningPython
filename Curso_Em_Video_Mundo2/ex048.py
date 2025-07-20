@@ -1,4 +1,4 @@
-#Exercício 47: Soma de impares multiplos de 3
+#Exercício 48: Soma de impares multiplos de 3
 #Aprendendo sobre for loops pt3
 
 soma=0
