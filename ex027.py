@@ -1,4 +1,4 @@
-#Exercício 26: Primeiro e último nome
+#Exercício 27: Primeiro e último nome
 #Aprendendo sobre manipulação de strings pt6
 
 nome = ( ( ( input("Qual o seu nome?: ") ).strip() ).lower() ).split()

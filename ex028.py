@@ -1,4 +1,4 @@
-#Exercício 27: Adivinhação simples
+#Exercício 28: Adivinhação simples
 #Aprendendo sobre condicionais
 
 from random import randint
