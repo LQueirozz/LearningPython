@@ -1,4 +1,4 @@
-#Exercício 51: Progressão aritmética com while
+#Exercício 61: Progressão aritmética com while
 #Aprendendo sobre while loops pt5
 
 print('Informe a razão e o primeiro termo de uma progressão aritmética')
