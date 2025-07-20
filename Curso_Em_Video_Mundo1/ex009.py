@@ -1,4 +1,4 @@
-#Exercício 8: Tabuada
+#Exercício 9: Tabuada
 #Aprendendo sobre operadores pt5
 
 n= int( input('Digite um numero inteiro para ver sua tabuada de 0 a 10: ') )
