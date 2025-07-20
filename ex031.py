@@ -1,10 +1,12 @@
-#Exercício 29: Reajuste salarial condicional
+#Exercício 31: Custo da viagem
 #Aprendendo sobre condicionais pt4
 
-salario= float( input('Digite seu salário atual: R$') )
+dist= float( input('Quão longa é a viagem (em km): ') )
 
-if(salario>1250):
-    print('Seu salario era R${:.2f}. Após o reajuste de 10%, ele vira: R${:.2f}' .format(salario, salario*1.1))
+#O preço da passagem é R$0,45/km se for mais de 200km, e R$0,50/km se for menos
+
+if(dist>200):
+    print('Para uma viagem de {:.2f}km, o custo da passagem é: R${:.2f}' .format(dist, dist*0.45))
 
 else:
-    print('Seu salario era R${:.2f}. Após o reajuste de 15%, ele vira: R${:.2f}' .format(salario, salario*1.15))
+    print('Para uma viagem de {:.2f}km, o custo da passagem é: R${:.2f}' .format(dist, dist*0.50))
