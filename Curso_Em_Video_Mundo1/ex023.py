@@ -1,22 +1,23 @@
-#Exercício 23: Analisador de textos
-#Aprendendo sobre manipulação de strings pt2
+#CHALLENGE 23: Breaking up the decimal houses of a number
+#GOAL: Write code that receives an integer and prints out how many thousands, hundreds, tens and ones it has
+#SKILL: Learning about operators
 
-numero = int(input("Digite um número qualquer: "))
+n = int(input('Type in a random integer: '))
 
-print("Analisando o numero {} ..." .format(numero))
+print(f'Analysing the number {n} ...')
 
-milhar = numero//1000
-numero -= milhar*1000
+th = n//1000
+n -= th*1000
 
-centena = numero//100
-numero -= centena*100
+h = n//100
+n -= h*100
 
-dezena = numero//10
-numero -= dezena*10
+te = n//10
+n -= te*10
 
-unidade = numero
+u = n
 
-print("Milhares: {}" .format(milhar))
-print("Centenas: {}" .format(centena))
-print("Dezenas: {}" .format(dezena))
-print("Unidades: {}" .format(unidade))
+print(f'Thousands: {th}')
+print(f'Hundreds: {h}')
+print(f'Tenths: {te}')
+print(f'Units: {u}')

@@ -1,10 +1,11 @@
-#Exercício 32: Ano bissexto
-#Aprendendo sobre condicionais pt5
+#CHALLENGE 32: Leap year
+#GOAL: Write code that checks if the year the user provided is a leap year
+#SKILL: Learning about conditionals
 
-ano=int(input('Digite um ano qualquer: '))
+y=int(input('Type in any year of your choice: '))
 
-if(ano%4==0 and ano%100!=0):
-    print('O ano {} é bissexto!' .format(ano))
+if(y%4==0 and y%100!=0):
+    print(f'The year {y} is a leap year!')
 
 else:
-    print('O ano {} não é bissexto!' .format(ano))
+    print(f'The year {y} is not a leap year!')

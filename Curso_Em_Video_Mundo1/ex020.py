@@ -1,5 +1,5 @@
 #CHALLENGE 20: Shuffling lists
-#GOAL: Write code that receives the names of four students and prints out thair names in a different random order
+#GOAL: Write code that receives the names of four students and prints out their names in a different random order
 #SKILL: Learning about importations
 
 import random

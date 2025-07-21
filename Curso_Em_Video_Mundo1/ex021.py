@@ -1,9 +1,10 @@
-#Exercício 21: tocando mp3
-#Aprendendo sobre importações pt6
+#CHALLENGE 21: Playing mp3
+#GOAL: Write code that plays an mp3 file
+#SKILL: Learning about importations
 
 import pygame
 
 pygame.init()
 pygame.mixer.music.load('ParabensGP.mp3')
 pygame.mixer.music.play()
-a= input('A música vai tocar até você digitar "ENTER" ')
+a= input('The song will play until you press "ENTER" ')

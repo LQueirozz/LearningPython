@@ -1,8 +1,9 @@
-#Exercício 27: Primeiro e último nome
-#Aprendendo sobre manipulação de strings pt6
+#CHALLENGE 27: Breaking down a name
+#GOAL: Write code that receives the user's name and prints out their first and last name
+#SKILL: Learning about string manipulation
 
-nome = ( ( ( input("Qual o seu nome?: ") ).strip() ).lower() ).split()
+n = ( ( ( input('What is your name: ') ).strip() ).lower() ).split()
 
-print('Prazer em te conhecer!')
-print('O seu primeiro nome é {}' .format(nome[0]))
-print('O seu último nome é {}' .format(nome[len(nome) -1]))
+print('Pleasure to meet you!')
+print(f'Your first name is {n[0]}')
+print(f'Your last name is {n[len(n)-1]}' )

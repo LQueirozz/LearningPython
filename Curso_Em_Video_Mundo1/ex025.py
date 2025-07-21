@@ -1,6 +1,7 @@
-#Exercício 25: Procurando uma substring
-#Aprendendo sobre manipulação de strings pt4
+#CHALLENGE 25: Checking for a word inside a name
+#GOAL: Write code that receives the user's name prints out if they have "Silva" as a part of their name
+#SKILL: Learning about string manipulation
 
-nome = ( ( input("Qual o seu nome?: ") ).strip() ).lower() 
+n = ( ( input("Whats your name?: ") ).strip() ).lower() 
 
-print('Você possui Silva no seu nome: {}' .format( bool(nome.find('silva')+1 ) ) )
+print(f'You have "Silva" somewhere in your name: {bool(n.find("silva")+1)}')

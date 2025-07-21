@@ -1,10 +1,11 @@
-#Exercício 30: Par ou impar
-#Aprendendo sobre condicionais pt3
+#CHALLENGE 30: Odd or even
+#GOAL: Write code that checks if user input was an odd or an even number
+#SKILL: Learning about conditionals
 
-n=int(input('Digite um inteiro qualquer maior do que 0: '))
+n=int(input('Type in an integer greater than 0: '))
 
 if(n%2==0):
-    print('O número {} é par!' .format(n))
+    print(f'The number {n} is even')
 
 else:
-    print('O número {} é impar!' .format(n))
+    print(f'The number {n} is odd')

@@ -1,7 +1,8 @@
-#Exercício 24: Verificando as primeiras letras de um texto
-#Aprendendo sobre manipulação de strings pt3
+#CHALLENGE 24: Checking first word of a city
+#GOAL: Write code that receives the name of a town and prints out if it's first name is "santo"
+#SKILL: Learning about string manipulation
 
-cidade = ( ( ( input("Qual a cidade em que você nasceu?: ") ).strip() ).lower() ).split()
+c = ( ( ( input("In what city were you born?: ") ).strip() ).lower() ).split()
 
-print("A primeira palavra da sua cidade natal é santo: {}" .format( cidade[0]=='santo' ) )
+print(f'The first word of your birthtown is "santo": {c[0]=='santo'}' )
 

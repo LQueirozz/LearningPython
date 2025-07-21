@@ -1,10 +1,13 @@
-#Exercício 34: Reajuste salarial condicional
-#Aprendendo sobre condicionais pt7
+#CHALLENGE 34: Salary adjustment with conditions
+#GOAL: Write code that receives a worker's current salary and prints out their new corrected salary after a pay upgrade
+#SKILL: Learning about conditionals
 
-salario= float( input('Digite seu salário atual: R$') )
+wage= float( input('Type in your current wage: R$') )
 
-if(salario>1250):
-    print('Seu salario era R${:.2f}. Após o reajuste de 10%, ele vira: R${:.2f}' .format(salario, salario*1.1))
+#the pay upgrade is 10% if the worker made more than R$1250.00, and 15% if not
+
+if(wage>1250):
+   print(f'You received {wage:.2f}, but after your 10% pay raise, you will receive {(wage*1.1):.2f}')
 
 else:
-    print('Seu salario era R${:.2f}. Após o reajuste de 15%, ele vira: R${:.2f}' .format(salario, salario*1.15))
+    print(f'You received {wage:.2f}, but after your 15% pay raise, you will receive {(wage*1.15):.2f}')

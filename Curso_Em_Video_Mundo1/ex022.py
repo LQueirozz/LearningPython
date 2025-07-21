@@ -1,15 +1,16 @@
-#Exercício 22: Analisador de textos
-#Aprendendo sobre manipulação de strings pt1
+#CHALLENGE 22: Analysing a name
+#GOAL: Write code that receives the user's name and prints out their name in all lowercase, in all uppercase, how many letters (not counting spaces) the whole name has and how many letters just the first name has
+#SKILL: Learning about string manipulation
 
-nome= (input("Escreva o seu nome: ")).strip()
+n= (input("Type in your name: ")).strip()
 
-nomeMais= nome.upper()
-nomeMinu= nome.lower()
-nomeSeparado=nome.split()
-tam = len(nome)-nome.count(' ')
-tamPri= len(nomeSeparado[0])
+nU= n.upper()
+nL= n.lower()
+nBrk=n.split()
+sze = len(n)-n.count(' ')
+sze1= len(nBrk[0])
 
-print("O seu nome todo em maiusculo é {}" .format(nomeMais))
-print("O seu nome todo em minúsculo é {}" .format(nomeMinu))
-print("O seu nome possui {} letras" .format(tam))
-print("O seu primeiro nome possui {} letras" .format(tamPri))
+print(f'Your name in all uppercase: {nU}')
+print(f'Your name in all lowercase {nL}')
+print(f'Your name has {sze} letters' )
+print(f'Your first name has {sze1} letters')

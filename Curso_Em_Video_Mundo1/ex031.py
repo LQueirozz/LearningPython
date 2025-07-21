@@ -1,12 +1,13 @@
-#Exercício 31: Custo da viagem
-#Aprendendo sobre condicionais pt4
+#CHALLENGE 31: Ticket price
+#GOAL: Write code that calculates how much a train ticket should cost based on how big the trip is
+#SKILL: Learning about conditionals
 
-dist= float( input('Quão longa é a viagem (em km): ') )
+dist= float( input('How long is the trip (in km): ') )
 
-#O preço da passagem é R$0,45/km se for mais de 200km, e R$0,50/km se for menos
+#If >200km, it will cost R$0.45 per km. If it's any shorter than that, it will cost R$0.50 per km 
 
 if(dist>200):
-    print('Para uma viagem de {:.2f}km, o custo da passagem é: R${:.2f}' .format(dist, dist*0.45))
+    print(f'For this trip, {dist:.2f}km, the cost of the ticket is R${(dist*0.45):.2f}')
 
 else:
-    print('Para uma viagem de {:.2f}km, o custo da passagem é: R${:.2f}' .format(dist, dist*0.50))
+    print(f'For this trip, {dist:.2f}km, the cost of the ticket is R${(dist*0.5):.2f}')
