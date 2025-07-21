@@ -1,7 +1,8 @@
-#Exercício 3: Soma de dois valores inteiros
-#Aprendendo a usar diferentes tipos de dados básicos
+#CHALLENGE 3: Adding two numbers
+#GOAL: Write code that receives two integers and prints out the sum between them
+#SKILL: Learning about operators and basic data types
 
-n1 = int( input('Digite um número inteiro: '))
-n2 = int( input('Digite mais um número inteiro: '))
+n1 = int( input('Type in an integer: '))
+n2 = int( input('Type in one more integer: '))
 s1= n1+n2
-print('a soma entre {} e {} dá o valor {}' .format(n1,n2,s1) )
+print(f'The sum between {n1} and {n2} is {s1}')

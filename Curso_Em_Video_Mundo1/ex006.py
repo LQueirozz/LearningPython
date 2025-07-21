@@ -1,11 +1,9 @@
-#Exercício 6: Dobro, Triplo, Raiz Quadrada
-#Aprendendo sobre operadores pt2
+#CHALLENGE 6: Double, triple and square root
+#GOAL: Write code that receives a non negative number and prints out it's double, triple and sqrt
+#SKILL: Learning about operators and basic data types
 
-n= float( input("Digite um número por favor: ") )
+n= float( input("Type in a number equal or greater than zero: ") )
 
-if (n%1==0):
-    n= int(n)
-
-print('O dobro de {} é {}' .format(n, n*2))
-print('O triplo de {} é {}' .format(n, n*3))
-print('A raiz quadrada de {} é {:.2f}' .format(n, n**(0.5)))
+print(f'{n} doubled is {n*2}')
+print(f'{n} tripled is {n*3}')
+print(f'The sqrt of {n} is {(n**(0.5)):.2f}')

@@ -1,5 +1,6 @@
-#Exercício 2: Lidando com input de usuário
-#Aprender como usar input
+#CHALLENGE 2: Answering the user
+#GOAL: Write code that reads the user's name and then greets them
+#SKILL: Learning how to input() 
 
-nome = input("digite seu nome, por favor ")                 
-print("É um prazer te conhecer, {}" .format(nome) )
+name = input("Type in your name, please: ")                 
+print(f'Pleasure to meet you, {name}')

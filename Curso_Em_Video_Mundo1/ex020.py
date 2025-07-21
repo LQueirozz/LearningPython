@@ -1,15 +1,16 @@
-#Exercício 20: Sorteando ordem na lista
-#Aprendendo sobre importações pt5
+#CHALLENGE 20: Shuffling lists
+#GOAL: Write code that receives the names of four students and prints out thair names in a different random order
+#SKILL: Learning about importations
 
 import random
 
-a1 = input('Primeiro aluno: ')
-a2 = input('Segundo aluno: ')
-a3 = input('Terceiro aluno: ')
-a4 = input('Quarto aluno: ')
+a1 = (input('First student: ')).strip()
+a2 = (input('Second student: ')).strip()
+a3 = (input('Third student: ')).strip()
+a4 = (input('Fourth student: ')).strip()
 
-lista=[a1, a2, a3, a4]
+lst=[a1, a2, a3, a4]
 
-random.shuffle(lista)
+random.shuffle(lst)
 
-print('{} {} {} {}' .format(lista[0], lista[1], lista[2], lista[3]))
+print(f'{lst[0]} {lst[1]} {lst[2]} {lst[3]}')

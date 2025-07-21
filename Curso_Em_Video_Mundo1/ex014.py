@@ -1,7 +1,8 @@
-#Exercício 14: Conversão de temperatura
-#Aprendendo sobre operadores pt10
+#CHALLENGE 14: Temperature conversion
+#GOAL: Write code that receives a temperature in celsius and prints it out in fahrenheit
+#SKILL: Learning about operators and basic data types
 
-celsius = float( input('Digite a temperatura em ºC:'))
-fahrenheit = (1.8*celsius) +32
+c = float( input('Type in the temperature in ºC:'))
+f = (1.8*c) +32
 
-print('A temperatura {:.2f}ºC corresponde à {:.2f}ºF!' .format(celsius, fahrenheit))
+print(f'The temperature {c:.2f}ºC corresponds to {f:.2f}ºF!')

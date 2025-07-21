@@ -1,6 +1,7 @@
-#Exercício 10: Conversão de moedas
-#Aprendendo sobre operadores pt6
+#CHALLENGE 10: Conversion from R$ to US$ 
+#GOAL: Write code that receives a money amount in Brazillian Reais and converts it to US Dollar (considering US$ 1.00 = R$ 5.54)
+#SKILL: Learning about operators and basic data types
 
-n= float(input('Quanto de dinheiro que você tem na carteira?: R$') )
+n= float(input('How much money do you have in your wallet?: R$') )
 
-print('Com seus R${:.2f} reais, você consegue comprar US${:.2f} dólares' .format(n, (n/5.54)) )
+print(f'With R${n:.2f}, you could buy US${(n/5.54):.2f}')

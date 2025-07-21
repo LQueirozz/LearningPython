@@ -1,10 +1,10 @@
-#Exercício 11: Cálculo de área de parede para pintar
-#Aprendendo sobre operadores pt7
+#CHALLENGE 11: Paint calculus
+#GOAL: Write code that receives the dimensions of a wall, calculates the surface area and prints out how much paint would be necessary 
+#to paint it fully (1m² of wall= 2L of paint )
+#SKILL: Learning about operators and basic data types
 
-print('Vamos calcular quanto de tinta é necessário para que você pint a sua parede!')
-largura= float(input('Digite a largura da sua parede em metros: '))
-altura= float(input('Digite a altura da sua parede em metros: ') )
+print('We shall calculate how much paint you need in order to paint you wall!')
+w= float(input('Type in the width of your wall, in meters: '))
+h= float(input('Type in the height of your wall, in meters: '))
 
-#considere a taxa de 2L de tinta para cada m² de tinta
-
-print('Para sua parede de dimensões {}m X {}m, o que resulta em uma área de {:.2f}m², você precisa de {:.2f}L de tinta' .format(largura, altura, (largura*altura), (largura*altura/2)))
+print(f'For your wall ({h}m X {w}m), you will need {(w*h/2):.2f}L of paint' )

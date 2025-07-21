@@ -1,20 +1,13 @@
-#Exercício 4: Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis
-#Aprendendo mais sobre tipos de dados básicos
+#CHALLENGE 4: Dissecting a variable
+#GOAL: Write code that receives user input, then prints out it's primitive type and different aspects of it
+#SKILL: Learning about operators and basic data types
 
-n = input('Digite algo: ')
+n = input('Type in something: ')
 
-if (n):
-    print('O tipo do seu input foi um: {}' .format( type(n)) )
-
-    print('O seu input é um número?: {}' .format( n.isnumeric() ) )
-
-    print('O seu input é alfabético?: {}' .format( n.isalpha() ) )
-    print('O seu input é constituído apenas por letras minúsculas?: {}' .format( n.islower() ) )
-    print('O seu input é constituído apenas por letras maiúsculas?: {}' .format( n.isupper() ) )
-    print('O seu input está capitalizado?: {}' .format( n.istitle() ) )
-    print('O seu input é constituído apenas por espaços?: {}' .format( n.isspace() ) )
-
-    print('O seu input faz parte do conjunto união entre números e letras?: {}' .format( n.isalnum() ) ) 
-
-else:
-    print('Por favor, insira algo na próxima vez!')
+print(f'The primitive type of your input was: {type(n)}')
+print(f'Is your input a number?: {n.isnumeric()}')
+print(f'Is your input alphabetic?: {n.isalpha()}')
+print(f'Is your input entirely lowercase?: {n.islower()}' )
+print(f'Is your input entirely uppercase?: {n.isupper()}' )
+print(f'Is your input only white spaces?: {n.isspace()}')
+print(f'Is your input alphanumeric?: {n.isalnum()}' ) 

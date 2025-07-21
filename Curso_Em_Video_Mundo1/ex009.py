@@ -1,36 +1,13 @@
-#Exercício 9: Tabuada
-#Aprendendo sobre operadores pt5
+#CHALLENGE 9: Multiplication tables
+#GOAL: Write code that receives an integer and prints out it's multiplication table, from 0 to 10
+#SKILL: Learning about operators and basic data types
 
-n= int( input('Digite um numero inteiro para ver sua tabuada de 0 a 10: ') )
-numCasas=0
-
-#A formatação desejada é:
-# --------------
-#  n X 0 = 0 
-#  n X 1 = n 
-#  n X 2 = 2n
-#  n X 3 = 3n 
-#  n X 4 = 4n
-#  n X 5 = 5n
-#  n X 6 = 6n 
-#  n X 7 = 7n
-#  n X 8 = 8n 
-#  n X 9 = 9n
-#  n X 10 = 10n
-# --------------
-
-
-while (n>1):
-    n/=10
-    numCasas+=1
-
-n =int( n*(10**numCasas) )
-len= 1+numCasas+8+(numCasas+1)+1
+n= int( input('Type in an integer to see their multiplication table from 0 to 10: ') )
+numDec=0
 i=0
 
-print('-'*len)
+print('='*20)
 while(i<11):
-    print(' {} X {} = {} ' .format(n, i, n*i))
+    print(f' {n} X {i} = {n*i} ')
     i+=1
-
-print('-'*len)
+print('='*20)

@@ -1,5 +1,6 @@
-#Exercício 1: Hello World!
-#Aprender como usar print()
+#CHALLENGE 1: Hello World!
+#GOAL: Write code that writes "Hello World!" on the console
+#SKILL: Learning how to use print()
 
-a= "olá mundo"
+a= "Hello World!"
 print(a)

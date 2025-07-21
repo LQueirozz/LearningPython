@@ -1,10 +1,11 @@
-#Exercício 15: Aluguel de carros
-#Aprendendo sobre operadores pt11
+#CHALLENGE 15: Rental car company
+#GOAL: Write code that receives how many km and days a rental car was occupied and prints out how much the renter owns the company 
+#SKILL: Learning about operators and basic data types
 
-#Preço por dia do carro: R$60
-#Preço por km rodado: R$0,15
+#Price per day: R$60
+#Price per km: R$0,15
 
-dias= int( input('Digite quantos dias você alugou o carro: '))
-km= float (input('Digite quantos kilômetros você andou com o carro: '))
+days= int( input('Type in how many days you have rented the car: '))
+km= float (input('Type in how many kilometers you traveled with the car: '))
 
-print('Total a pagar R${:.2f}' .format( (dias*60) + (km*0.15) ) )
+print(f'You own R${( (days*60) + (km*0.15) ):.2f}' )

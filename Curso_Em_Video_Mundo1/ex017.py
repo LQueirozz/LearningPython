@@ -1,11 +1,11 @@
-#Exercício 17: calculando a hipotenusa
-#Aprendendo sobre importações pt2
+#CHALLENGE 17: Finding the hypothenuse
+#GOAL: Write code that receives both legs of a rectangle triangle and prints out the hypothenuse 
+#SKILL: Learning about importations
 
 from math import hypot
 
-co = float (input('Digite a medida do cateto oposto do seu triângulo: '))
-ca = float (input('Digite a medida do cateto adjacente do seu triângulo: '))
+ol = float (input('Type in the size of the opposite leg of your triangle: '))
+al = float (input('Type in the size of the adjacent leg of your triangle: '))
+h = hypot(ol, al)
 
-h = hypot(co, ca)
-
-print('Para o triângulo de catetos {} e {}, a hipotenusa deve ser: {}' .format(co, ca, h))
+print(f'The triangle with legs {ol} and {al} has a hypothenuse of size {h}')
