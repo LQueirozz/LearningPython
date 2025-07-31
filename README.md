@@ -1,3 +1,3 @@
 # LearningPython
 
-Este é o repósitório para guardar o meu progresso ao longo da minha jornada em aprender Python utilizando o "Curso em Video" no Youtube
+This repository is meant to store my progress as I learn the basics of Python3 using the "Curso em Vídeo" playlist on Youtube
