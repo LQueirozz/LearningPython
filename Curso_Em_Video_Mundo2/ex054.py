@@ -1,17 +1,16 @@
-#Exercício 54: Maioridade
-#Aprendendo sobre for loops pt9
+#CHALLENGE 54: Coming to age
+#GOAL: Write code that receives the birth year of 7 people and print out how many are of age (21 yrs)
+#SKILL: Learning about for loops
 
-print("Vamos verificar quantas das próximas 7 pessoas são maiores de idade!")
-anoA = int(input('Digite o ano atual: '))
-maior=0
 
-lista = []
+print("Let\'s check how many people have 21yrs or more!")
+cYear = int(input('Type in the current year: '))
+age=0
+
+lst = []
 
 for i in range(1, 8, 1):
-    lista.append( int(input('Digite o ano de nascimento da {}ª pessoa: '.format(i) ) ) )
+    if( int(input(f'Type in the birth year of the {i}º person: ') )  +21 <=cYear):
+        age+=1
 
-for ano in lista:
-    if (ano+21<=anoA):
-        maior+=1
-
-print('Entre as sete pessoas classificadas, há {} pessoas com 21 anos ou mais' .format(maior))
+print('Between those 7 people, {} of them were of age')

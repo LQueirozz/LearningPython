@@ -1,17 +1,16 @@
-#Exercício 38: Maior entre dois números
-#Aprendendo sobre condicionais aninhadas pt3
+#CHALLENGE 38: Larger of two numbers
+#GOAL: Write code that receives two integers from the user and determines which one is larger or if they are equal
+#SKILL: Learning about nested conditionals
 
-print('Vamos encontrar o maior de 2 números inteiros!')
-a = int( input('Digite o primeiro número inteiro: ') )
-b = int( input('Digite o segundo número inteiro: ') )
+print('Let\'s find the greatest among 2 integers!')
+a = int( input('Enter the first integer: ') )
+b = int( input('Enter the second integer: ') )
 
 if(a>b):
-    print('O maior número é {}' .format(a))
+    print('The larger number is {}' .format(a))
 
 elif(b>a):
-    print('O maior número é {}' .format(b))
+    print('The larger number is {}' .format(b))
 
 else:
-    print('Não há maior número, pois os dois são iguais a {}' .format(a))
-
-
+    print('There is no larger number, because both are equal to {}' .format(a))

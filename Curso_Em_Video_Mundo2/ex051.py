@@ -1,5 +1,6 @@
-#Exercício 51: Progressão aritmética
-#Aprendendo sobre for loops pt6
+#CHALLENGE 51: Arithmetic progression
+#GOAL: Write code that receives the first term and the pace of a geometric progression, and prints out the first 10 numbers of the progression
+#SKILL: Learning about for loops
 
 print('Informe a razão e o primeiro termo de uma progressão aritmética')
 r=int(input('Razão: '))

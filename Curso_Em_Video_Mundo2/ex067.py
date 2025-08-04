@@ -1,23 +1,24 @@
-#Exercício 67: Várias tabuadas 
-#Aprendendo sobre break pt2
+#CHALLENGE 67: Complete multiplication table
+#GOAL: Write code that takes in as many integers as the user wants and then print out the highest, the lowest and the average
+#SKILL: Learning about break
 
 while(True):
-    n= int( input('Digite um número positivo inteiro para ver sua tabuada de 0 a 10: ') )
+    n= int( input('Type in any number to see it\'s multiplication table of 0 through 10 (-1 to exit): ') )
+    numDec=0
     if(n<0):
         break
-    numCasas=0
 
     while (n>1):
         n/=10
-        numCasas+=1
+        numDec+=1
 
-    n =int( n*(10**numCasas) )
-    len= 1+numCasas+8+(numCasas+1)+1
+    n =int( n*(10**numDec) )
+    siz= 1+numDec+8+(numDec+1)+1
     i=0
 
-    print('-'*len)
+    print('-'*siz)
     while(i<11):
-        print(' {} X {} = {} ' .format(n, i, n*i))
+        print(f' {n} X {i} = {n*i} ')
         i+=1
 
-    print('-'*len)
+    print('-'*siz)

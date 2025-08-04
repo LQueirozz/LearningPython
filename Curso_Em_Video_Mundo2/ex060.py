@@ -1,19 +1,20 @@
-#Exercício 60: Fatorial
-#Aprendendo sobre while loops pt4
+#CHALLENGE 60: Factorial
+#GOAL: Write code that shows the factorial of a number
+#SKILL: Learning about while loops
 
-a=int(input('Digite um número inteiro positivo: '))
+a=int(input('Type in a positive integer: '))
 b=''
-fat=1
+fact=1
 
-print('{}! = ' .format(a), end='')
+print(f'{a}! = ', end='')
 
 while(a>1):
-    fat *= a
-    b+='{} x ' .format(a)
+    fact *= a
+    b+= (f'{a} x ')
     a-= 1
 
 b += '1'
 
-print('{} = {}' .format(b, fat))
+print(f'{b} = {fact}')
 
 

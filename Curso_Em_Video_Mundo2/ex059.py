@@ -1,52 +1,53 @@
-#Exercício 59: Calculadora com menu de opções
-#Aprendendo sobre while loops pt3
+#CHALLENGE 59: Calculator
+#GOAL: Write code that receives two integers from the user, then an operation and calculate it for him
+#SKILL: Learning about while loops
 
-def pegaNumeros(a, b):
-    a=int(input('Digite o primeiro número inteiro: ')) 
-    b=int(input('Digite o segundo número inteiro: '))
-    return [a,b]
+def getNums(l:list):
+    l[0]=int(input('Type in the first integer: ')) 
+    l[1]=int(input('Type in the second integer: '))
+    return l[:]
 
 def menu():
-    print('OPÇÕES DA CALCULADORA:')
-    print('1- SOMA')
-    print('2- MULTIPLICAÇÃO')
-    print('3- MAIOR')
-    print('4- TROCAR NUMEROS')
-    print('5- SAIR DA CALCULADORA')
-    return(int (input('Digite qual opção você deseja: ')))
+    print('CALCULATOR OPTIONS:')
+    print('1- SUM')
+    print('2- MULTIPLICATION')
+    print('3- GREATEST')
+    print('4- NEW NUMBERS')
+    print('5- LEAVE CALCULATOR')
+    return(int (input('What option do you want: ')))
 
-def maior(a, b):
+def greatest(a, b):
     if(a>b):
-        return ('{} > {}'.format(a,b) )
+        return (f'{a} > {b}')
     
     elif(a<b):
-        return ('{} > {}'.format(b,a) )
+        return (f'{b} > {a}')
     
     else:
-        return ('{} = {}'.format(a,b) )
+        return (f'{a} = {b}')
 
-lista = [0, 0]
+lst = [0, 0]
 opc=0
 
-lista= pegaNumeros(lista[0], lista[1])
+lsl= getNums(lst[0], lst[1])
 opc= menu()
 
 while(opc!=5):
     if(opc==1):
-        print('{} + {} = {}' .format(lista[0], lista[1], lista[0] + lista[1]))
+        print(f'{lst[0]} + {lst[1]} = {lst[0] + lst[1]}')
 
     elif(opc==2):
-        print('{} x {} = {}' .format(lista[0], lista[1], lista[0] * lista[1]))
+        print(f'{lst[0]} x {lst[1]} = {lst[0]* lst[1]}')
 
     elif(opc==3):
-        print(maior(lista[0], lista[1]))
+        print(greatest(lst[0], lst[1]))
 
     elif(opc==4):
-        lista= pegaNumeros(lista[0], lista[1])
+        lst= getNums(lst[0], lst[1])
 
     else:
-        print('Opção inválida!')
+        print('Invalid option!')
 
     opc= menu()
 
-print('Execução finalizada!')
+print('End of execution')

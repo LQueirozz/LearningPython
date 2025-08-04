@@ -1,10 +1,11 @@
-#Exercício 42: Formação de triangulos 2
-#Aprendendo sobre condicionais aninhadas pt7
+#CHALLENGE 42: Triangle formations 2
+#GOAL: Write code that receives the length of 3 lines and shows what kind of triangle it is (isoceles, scaleno, equilateral)
+#SKILL: Learning about nested conditionals
 
-print('Informe o comprimento de 3 retas!')
-a = int( input('Digite o primeiro número inteiro: ') )
-b = int( input('Digite o segundo número inteiro: ') )
-c = int( input('Digite o terceiro número inteiro: ') )
+print('Type in the lenght of 3 lines!')
+a = int( input('Type in the first length (integer): ') )
+b = int( input('Type in the second length (integer): ') )
+c = int( input('Type in the third length (integer): ') )
 
 if(c>a):
     temp = a
@@ -22,19 +23,19 @@ if(c>b):
     c = temp
 
 if(a==b and b==c):
-    info='equilátero'
+    info='Equilatery'
 
 elif(a!=b and a!=c and c!=b):
-    info='escaleno'
+    info='Scalene'
 
 else:
-    info='isóceles'
+    info='Isoceles'
 
 if( a>=(b+c) ):
-    print('Não é possível formar um triângulo com estas retas!')
+    print('It is not possible to create a triangle with these side lengths!')
     exit()
 
 else:
-    print('É possível formar um triângulo {} com estas retas!' .format(info))
+    print(f'You can create a {info} triangle with these lines!')
 
 

@@ -1,7 +1,9 @@
-#Exercício 63: Fibonacci
-#Aprendendo sobre while loops pt7
+#CHALLENGE 63: Fibonacci sequence
+#GOAL: Write code that prints out as many terms of the fibonacci sequence as the user wants
+#SKILL: Learning about while loops
 
-a=int(input('Digite um número inteiro positivo: '))
+a=int(input('Type in a positive integer: '))
+print(f'The first {a} terms of the fibonacci sequence are:')
 i=0
 fib=[0, 1]
 

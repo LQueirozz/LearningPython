@@ -1,31 +1,32 @@
-#Exercício 65: Estatística para muitos números
-#Aprendendo sobre while loops pt9
+#CHALLENGE 65: Data analisys
+#GOAL: Write code that takes in as many integers as the user wants and then print out the highest, the lowest and the average
+#SKILL: Learning about while loops
 
-flag='S'
-cont=0
-soma=0
 lst=[]
-maior=0
-menor=0
+lst.append( int(input('Type in an integer: ')) )
+greatest= lst[0] 
+lowest= lst[0] 
+sum = lst[0] 
+i=1
 
-while(flag!='N'):
-    lst.append( int(input('Digite um número inteiro: ')) )
-    soma+=lst[cont]
-
-    if (cont>1):
-        if(lst[cont]<lst[cont-1]):
-            menor=lst[cont]
-
-        if(lst[cont]>lst[cont-1]):
-            maior=lst[cont]
+flag= ( (input('Do you wish to type in another number? (Y/N): ')).strip()).upper()
+while(flag not in 'nN'):
+    if flag not in 'Yy':
+        print('That is not a valid option!')
 
     else:
-        menor=lst[cont]
-        maior=lst[cont]
+        lst.append( int(input('Type in an integer: ')) )
+        sum+=lst[i]
 
-    cont+=1
-    flag= ( (input('Você quer digitar mais um número? (S/N): ')).strip()).upper()
+        if(lst[i]<lowest):
+            lowest=lst[i]
 
-print('Antes de parar, a média dos números inseridos por você foi {:.2f}' .format(soma/cont))
-print('O maior número foi {}' .format(maior))
-print('O menor número foi {}' .format(menor))
+        if(lst[i]>greatest):
+            greatest=lst[i]
+
+        i+=1
+    flag= ( (input('Do you wish to type in another number? (Y/N): ')).strip()).upper()
+
+print(f'Before stopping, the mean of the numbers you typed in were {(sum/i):.2f}')
+print(f'The greatest number you typed was {greatest}')
+print(f'The lowest number you typed was {lowest}')

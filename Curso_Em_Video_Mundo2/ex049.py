@@ -1,35 +1,19 @@
-#Exercício 49: Tabuada usando for
-#Aprendendo sobre for loops pt4
+#CHALLENGE 49: Multiplication table upgraded
+#GOAL: Write code that prints out the multiplication table of whatever number the user puts in
+#SKILL: Learning about for loops
 
-n= int( input('Digite um numero inteiro para ver sua tabuada de 0 a 10: ') )
-numCasas=0
-
-#A formatação desejada é:
-# --------------
-#  n X 0 = 0 
-#  n X 1 = n 
-#  n X 2 = 2n
-#  n X 3 = 3n 
-#  n X 4 = 4n
-#  n X 5 = 5n
-#  n X 6 = 6n 
-#  n X 7 = 7n
-#  n X 8 = 8n 
-#  n X 9 = 9n
-#  n X 10 = 10n
-# --------------
-
+n= int( input('Type in any number to see it\'s multiplication table of 0 through 10: ') )
+numDec=0
 
 while (n>1):
     n/=10
-    numCasas+=1
+    numDec+=1
 
-n =int( n*(10**numCasas) )
-len= 1+numCasas+8+(numCasas+1)+1
+n =int( n*(10**numDec) )
+len= 1+numDec+8+(numDec+1)+1
 i=0
 
 print('-'*len)
 for i in range(0, 11, 1):
-    print(' {} X {} = {} ' .format(n, i, n*i))
-
+    print(f' {n} X {i} = {n*i} ')
 print('-'*len)

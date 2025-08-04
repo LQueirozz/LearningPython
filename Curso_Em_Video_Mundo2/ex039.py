@@ -1,17 +1,15 @@
-#Exercício 39: Alistamento militar
-#Aprendendo sobre condicionais aninhadas pt4
+#CHALLENGE 39: Military enlistment
+#GOAL: Write code that calculates when a person should enlist in the military based on their birth year and the current year
+#SKILL: Learning about nested conditionals
 
-anoA = int(input('Informe o ano atual: '))
-anoN = int(input('Informe seu ano de nascimento: '))
+currentYear = int(input('Enter the current year: '))
+birthYear = int(input('Enter your birth year: '))
 
-if( (anoN+18) <anoA):
-    print('Sua época de alistamento foi {} anos atrás' .format( anoA - ( anoN+18 ) ))
+if( (birthYear+18) < currentYear):
+    print('Your enlistment year was {} years ago' .format( currentYear - ( birthYear+18 ) ))
 
-elif( (anoN+18) >anoA):
-    print('Sua época de alistamento vai ser daqui a {} anos ' .format( ( anoN+18 ) - anoA ))
+elif( (birthYear+18) > currentYear):
+    print('Your enlistment year will be in {} years ' .format( ( birthYear+18 ) - currentYear ))
 
 else:
-    print('Esse é seu ano de se alistar!')
-
-
-
+    print('This is your year to enlist!')

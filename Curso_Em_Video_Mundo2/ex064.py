@@ -1,13 +1,14 @@
-#Exercício 64: Flags
-#Aprendendo sobre while loops pt8
+#CHALLENGE 64: Flags
+#GOAL: Write code that sums up all the users input until they type in the exit code
+#SKILL: Learning about while loops
 
-flag= int(input('Digite um número inteiro positivo: '))
-cont=0
-soma=0
+flag= int(input('Type in a positive integer (to exit, type 999): '))
+count=0
+sum=0
 
 while(flag!=999):
-    soma+=flag
-    cont+=1
-    flag= int(input('Digite um número inteiro positivo: '))
+    sum+=flag
+    count+=1
+    flag= int(input('Type in a positive integer (to exit, type in 999): '))
 
-print('Antes de digitar o código de saida (999), você digitou {} números, que juntos somam {}' .format(cont, soma))
+print(f'Before typing the exit code (999), you typed {count} numbers that sum up to {sum}')

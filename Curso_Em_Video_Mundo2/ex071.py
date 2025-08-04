@@ -1,21 +1,22 @@
-#Exercício 71: Caixa eletrônico
-#Aprendendo sobre break pt6
+#CHALLENGE 71: ATM machine
+#GOAL: Write code that simulates an ATM machine calculating the minimum number of bills needed for withdrawal
+#SKILL: Learning about break 
 
-valor=float(input('Olá, eu sou um caixa eletrônico. Digite o quanto você quer sacar: R$'))
-print(f'Para sacar R${valor:.2f}, vão ser necessárias...')
+amount = float(input('Hello, I am an ATM machine. Enter how much you want to withdraw: R$'))
+print(f'To withdraw R${amount:.2f}, you will need...')
 
-num50= valor//50
-valor= valor- 50*num50
+bills_50 = amount // 50
+amount = amount - 50 * bills_50
 
-num20= valor//20
-valor= valor- 20*num20
+bills_20 = amount // 20
+amount = amount - 20 * bills_20
 
-num10= valor//10
-valor= valor - 10*num10
+bills_10 = amount // 10
+amount = amount - 10 * bills_10
 
-num1=valor
+bills_1 = amount
 
-print(f'{num50:.0f} cédulas de R$50,00')
-print(f'{num20:.0f} cédulas de R$20,00')
-print(f'{num10:.0f} cédulas de R$10,00')
-print(f'{num1:.0f} cédulas de R$1,00')
+print(f'{bills_50:.0f} bills of R$50.00')
+print(f'{bills_20:.0f} bills of R$20.00')
+print(f'{bills_10:.0f} bills of R$10.00')
+print(f'{bills_1:.0f} bills of R$1.00')

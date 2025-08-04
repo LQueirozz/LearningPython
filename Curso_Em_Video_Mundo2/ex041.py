@@ -1,23 +1,23 @@
-#Exercício 41: Classificação etária
-#Aprendendo sobre condicionais aninhadas pt6
+#CHALLENGE 41: Age classification
+#GOAL: Write code that calculates a person's age and classifies them into age categories (MIRIM, INFANTIL, JUNIOR, SENIOR, MASTER)
+#SKILL: Learning about nested conditionals
 
-anoA = int(input('Informe o ano atual: '))
-anoN = int(input('Informe seu ano de nascimento: '))
+currentYear = int(input('Enter the current year: '))
+birthYear = int(input('Enter your birth year: '))
 
-idade=anoA-anoN
+age = currentYear - birthYear
 
-if(idade<=9):
-    print('MIRIM')
+if(age<=9):
+    print('CHILD')
 
-elif(idade<=14):
-    print('INFANTIL')
+elif(age<=14):
+    print('PRE-TEEN')
 
-elif(idade<=19):
+elif(age<=19):
     print('JUNIOR')
 
-elif(idade==20):
+elif(age==20):
     print('SENIOR')
 
 else:
     print('MASTER')
-

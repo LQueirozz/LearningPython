@@ -1,47 +1,48 @@
-#Exercício 45: Pedra, Papel, Tesoura
-#Aprendendo sobre condicionais aninhadas pt10
+#CHALLENGE 45: Rock, paper, scissors
+#GOAL: Write code that plays rock, paper, scissors with the user
+#SKILL: Learning about nested conditionals
 
 from random import randint
 
-print('Vamos jogar pedra, papel e tesoura!')
-print('Para jogar pedra, digite 0')
-print('Para jogar papel, digite 1')
-print('Para jogar tesoura, digite 2')
+print('Let\'s play rock, paper scissors!')
+print('For rock, type 0')
+print('For paper, type 1')
+print('For scissors, type 2')
 
-n = int(input('O que que você quer jogar?: '))
-c = randint(0,2)
+user = int(input('What do you want to play?: '))
+comp = randint(0,2)
 
-lis=['pedra', 'papel', 'tesoura']
+lis=['rock', 'paper', 'scissors']
 
 
-if(c==n):
-    print('Deu empate, nós dois jogamos {}' .format(lis[n]))
+if(comp==user):
+    print(f'It\'s a TIE, we both played {lis[user]}')
     exit()
 
-elif(n==0):
-    if(c==1):
+elif(user==0):
+    if(comp==1):
         venceu=False
     else:
         venceu=True
 
-elif(n==1):
-    if(c==2):
+elif(user==1):
+    if(comp==2):
         venceu=False
     else:
         venceu=True
     
-elif(n==2):
-    if(c==0):
+elif(user==2):
+    if(comp==0):
         venceu=False
     else:
         venceu=True
 
 else:
-    print('Isso não é uma opção válida! Por favor, escolha um número entre 1 e 3 na próxima')
+    print('That is not a valid option! Please pick an option between 0 and 2 next time!')
     exit()
 
 if(venceu):
-    print('Parabéns! Você venceu! Enquanto eu joguei {}, você foi mais esperto e jogou {}!' .format(lis[c], lis[n]))
+    print(f'Congrats, you WON! I played {lis[comp]} and you played {lis[user]}!')
 
 else:
-    print('Poxa! Você perdeu! Eu joguei {}, e você jogou {}! Na próxima você ganha!' .format(lis[c], lis[n]))
+    print(f'Oh no, you LOST! I played {lis[comp]} and you played {lis[comp]}!')

@@ -1,23 +1,24 @@
-#Exercício 43: Classificação IMC
-#Aprendendo sobre condicionais aninhadas pt8
+#CHALLENGE 41: BMI classification
+#GOAL: Write code that calculates a person's weight and height and show what BMI categorie they are
+#SKILL: Learning about nested conditionals
 
-h = float(input('Informe a sua altura em metros: '))
-m = float(input('Informe sua massa em kg: '))
+h = float(input('Type in your height in meters: '))
+m = float(input('Type in your weight in kg: '))
 
 imc= m/(h**2)
 
 if(imc<18.5):
-    print('ABAIXO DO PESO')
+    print('BELOW WEIGHT')
 
 elif(imc<=25):
-    print('PESO IDEAL')
+    print('IDEAL WEIGHT')
 
 elif(imc<=30):
-    print('SOBREPESO')
+    print('OVER WHEIGHT')
 
 elif(imc<=40):
-    print('OBESIDADE')
+    print('OBESITY')
 
 else:
-    print('OBESIDADE MÓRBIDA')
+    print('MORBID OBESITY')
 

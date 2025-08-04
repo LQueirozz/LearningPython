@@ -1,22 +1,23 @@
-#Exercício 56: Maior e menor da lista
-#Aprendendo sobre for loops pt11
+#CHALLENGE 56: Weights in a list
+#GOAL: Write code that receives the weight of 5 people and then find the highest and lowest weight among them
+#SKILL: Learning about for loops
 
-print("Informe, em kg, o peso de 5 pessoas")
+print("Please type in the weight of 5 people")
 
-lista=[]
+lst=[]
 
 for i in range(1, 6, 1):
-    lista.append( int( input('Informe o peso da {}ª pessoa: ' .format(i)) )) 
+    lst.append(float( input('Weight of the {i}º person: '))) 
 
-menor=lista[0]
-maior=0
+low=lst[0]
+high=-1
 
-for peso in lista:
-    if (peso < menor):
-        menor=peso
+for w in lst:
+    if (w < low):
+        low=w
 
-    if (peso>maior):
-        maior=peso
+    if (w>high):
+        high=w
 
-print('O maior peso lido foi {}kg' .format(maior))
-print('O menor peso lido foi {}kg' .format(menor))
+print(f'The highest weight was {high}kg')
+print(f'The lowest weight was {low}kg')

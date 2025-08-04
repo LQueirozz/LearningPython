@@ -1,10 +1,9 @@
-#Exercício 57: Validação de dados
-#Aprendendo sobre while loops pt1
+#CHALLENGE 57: Input validation
+#GOAL: Write code that takes in input of a person's sex until they pick between male, female or intersex
+#SKILL: Learning about while loops
 
+a = ((input('Type in your sex (M, F ou I): ')).strip()).upper()
+while( (a not in 'fF') and (a not in 'mM') and (a not in 'Ii') ):
+    a = ((input('That is not a valid option, pleas pick an option among (M, F ou I): ')).strip()).upper()
 
-a = ((input('Digite qual o seu sexo (M, F ou I): ')).strip()).upper()
-
-while( (a!='F') and (a!='M') and (a!='I') ):
-    a = ((input('Opção inválida! Favor escolher uma das três opções fornecidas (M, F ou I): ')).strip()).upper()
-
-print('Opção escolhida: {}' .format(a))
+print(f'Option selected: {a}')

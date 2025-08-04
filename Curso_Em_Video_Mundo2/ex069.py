@@ -1,34 +1,36 @@
-#Exercício 69: Analise de dados pessoais contínua
-#Aprendendo sobre break pt4
+#CHALLENGE 69: Data analysis
+#GOAL: Write code that receives personal information about as many people as the user wants and then print how many people are of legal age
+#as well as how many men there are in the group, and how many women had less than 20 years
+#SKILL: Learning about for loops
 
-anoA = int(input('Digite o ano atual: '))
+yearC= int(input('Type in the current year: '))
 i=1
-numH=0
-numM=0
-maiores=0
+numWomen=0
+numMen=0
+legalAge=0
 
 while True:
-    flag= ( (input('Você quer cadastrar mais uma pessoa? (S/N): ')).strip()).upper()
+    flag= ( (input('Would you like to add someone else? (Y/N): ')).strip()).upper()
     if(flag=='N'):
         break
-    elif(flag!='S'):
-        print('Opção Inválida!') 
+    elif(flag!='Y'):
+        print('That\'s not a valid option!') 
         continue
 
     print('================{}=================' .format(i))
-    idade=( anoA - (int( input('Informe o ano de nascimento da {}ª pessoa: ' .format(i)) )) )
-    sexo= ((input('Informe o sexo da {}ª pessoa (M, F ou I): ' .format(i))).strip())
+    age= yearC - (int( input(f'Type in the {i}º person\'s birthyear: ')))
+    sex= ((input(f'Type in the {i}º person\'s sex (M, F or I): ')).strip())
     print(' ')
 
-    if(sexo=='M'):
-        numH+=1
+    if age>21:
+        legalAge+=1
 
-    if(sexo=='F' and idade<20):
-        numM+=1
+    if(sex in 'fF' and age<20):
+        numWomen+=1
 
-    if(idade>18):
-        maiores+=1
+    if sex in 'mM':
+        numMen+=1
 
-print(f'Há {maiores} pessoas maiores de idade no grupo cadastrado')
-print(f'Há {numH} pessoas do sexo masculino no grupo')
-print(f'Há {numM} mulheres no grupo com menos de 20 anos' )
+print(f'There are {legalAge} people older than 21 in the group')
+print(f'There are {numMen} men in the group')
+print(f'There are {numWomen} women under the age of 20 in the group' )

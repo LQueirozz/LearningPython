@@ -1,7 +1,8 @@
-#Exercício 47: Pares no intervalo
-#Aprendendo sobre for loops pt2
+#CHALLENGE 47: Evens in the interval
+#GOAL: Write code that prints out all the even numbers between 1 and 50
+#SKILL: Learning about for loops
 
-print("Os pares no intervalo de 1 a 50 são:")
+print("The even numbers between 1-50 are:")
 
 for i in range (2, 51, 2):
     print(i)

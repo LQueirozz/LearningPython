@@ -1,26 +1,23 @@
-#Exercício 53: Palindromos
-#Aprendendo sobre for loops pt8
+#CHALLENGE 53: Palindromes
+#GOAL: Write code that prints out if the sentence the user provided was a palindrome, regardless of spacing
+#SKILL: Learning about for loops
 
-frase1 = (input('Digite uma frase qualquer: ') ).lower()
-frase2 = ''
+s1 = (input('Type in any sentence: ') ).lower()
+s2 = ''
 k = 0
 total=0
 
-for i in range (0, len(frase1), 1):
-    if(frase1[i] != ' '):
-        frase2 += frase1[i]
+s1Spaceless= s1.replace(' ', '')
 
-pali = ''
+for i in range (0, len(s1Spaceless), 1):
+    s2 += s1Spaceless[i]
 
-for j in range (len(frase2)-1, 0, -1):
-    pali += frase2[j]
-
-for l in range (0, len(frase2)-1, 1):
-    if (pali[l] == frase2[l]):
+for l in range (0, len(s2)-1, 1):
+    if (s1Spaceless[l] == s2[l]):
         total+=1
 
-if(total == len(frase2)-1):
-    print('A frase "{}" é um palíndromo!' .format(frase1))
+if(total == len(s2)-1):
+    print(f'The sentence "{s1}" is a palindrome (disregarding spacing)!')
 
 else:
-    print('A frase "{}" não é um palíndromo!' .format(frase1))
+    print(f'The sentence "{s1}" is not a palindrome (disregarding spacing)!')

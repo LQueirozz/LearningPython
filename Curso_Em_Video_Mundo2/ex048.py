@@ -1,10 +1,10 @@
-#Exercício 48: Soma de impares multiplos de 3
-#Aprendendo sobre for loops pt3
+#CHALLENGE 48: Summing up
+#GOAL: Write code that prints out the sum of all odd numbers that are also divisible by 3 between 1 and 500
+#SKILL: Learning about for loops
 
-soma=0
-for i in range(1, 501, 2):
-    if(i%3==0):
-        soma+= i
+sum=0
+for i in range(3, 501, 6):
+    sum+= i
 
 
-print('A soma dos números ímpares e multiplos de 3 no intervalo de [1, 500] é {}' .format(soma))
+print(f'The sum of all odd numbers that are also divisible by 3 in the interval [1, 500] is {sum}')

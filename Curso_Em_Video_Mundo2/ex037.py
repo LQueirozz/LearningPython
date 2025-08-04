@@ -1,29 +1,30 @@
-#Exercício 37: Conversor de bases numéricas
-#Aprendendo sobre condicionais aninhadas pt2
+#CHALLENGE 37: Number base converter
+#GOAL: Write code that converts an integer chosen by the user to another numeric base (binary, octal, or hexadecimal)
+#SKILL: Learning about nested conditionals
 
-print('Vamos converter um inteiro escolhido por você pra outra base númerica!')
-numOrig= int(input('Digite o número que você quer converter: '))
+print('Let\'s convert an integer chosen by you to another numeric base!')
+origNum = int(input('Enter the number you want to convert: '))
 
-print('Para converter o número {} para binário, digite 1'.format(numOrig))
-print('Para converter o número {} para octal, digite 2'.format(numOrig))
-print('Para converter o número {} para hexadecimal, digite 3'.format(numOrig))
+print('To convert the number {} to binary, type 1'.format(origNum))
+print('To convert the number {} to octal, type 2'.format(origNum))
+print('To convert the number {} to hexadecimal, type 3'.format(origNum))
 
-base= int(input('Qual das bases você deseja?: '))
+base = int(input('Which base do you want?: '))
 
 if(base==1):
-    conversão='binário'
-    num=bin(numOrig)
+    conversion='binary'
+    num=bin(origNum)
 
 elif(base==2):
-    conversão= 'octal'
-    num=oct(numOrig)
+    conversion= 'octal'
+    num=oct(origNum)
 
 elif(base==3):
-    conversão= 'hexadecimal'
-    num=hex(numOrig)
+    conversion= 'hexadecimal'
+    num=hex(origNum)
 
 else:
-    print('Isso não é uma opção válida! Por favor, escolha um número entre 1 e 3 na próxima')
+    print('That is not a valid option! Please choose a number between 1 and 3 next time')
     exit()
     
-print('O número {}, quando convertido para a base {}, fica {}' .format(numOrig, conversão, num[2::]))
+print('The number {}, when converted to {} base, becomes {}' .format(origNum, conversion, num[2::]))

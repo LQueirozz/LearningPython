@@ -1,11 +1,12 @@
-#Exercício 50: Soma dos pares
-#Aprendendo sobre for loops pt5
+#CHALLENGE 50: Sum of evens
+#GOAL: Write code that receives 6 integers and prints out the sum of only the even numbers inputed
+#SKILL: Learning about for loops
 
-print('Digite 6 números inteiros')
-soma=0
+print('Type in 6 integers')
+sum=0
 for i in range(1, 7, 1):
-    a= int(input('{}º número inteiro: ' .format(i)))
+    a= int(input(f'{i}º integer '))
     if (a%2==0):
-        soma+=a
+        sum+=a
 
-print('a soma dos números pares digitados foi: {}' .format(soma))
+print(f'The sum of only the even numbers you provided was {sum}')
