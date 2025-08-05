@@ -5,22 +5,16 @@
 
 def classAnalysis(grades: list, report= False):
     """
-    The function classAnalysis() 
+    The function classAnalysis() is meant to read a list of student grades and then find the
+    highest, the lowest, the average and a literal report
+    param grades: list of student grades in float
+    param report: bool that measures if the user wants the report
+    return: dictionary with many informations
     """
     dic= dict()
-    dic['Average']= 0
-    avg=0
-    dic['Highest']=dic['Lowest']=grades[0]
-
-    for g in grades:
-        dic['Average']+= (g/len(grades))
-
-        if g>dic['Highest']:
-            dic['Highest']=g
-
-        if g<dic['Lowest']:
-            dic['Lowest']=g
-
+    dic['Average']= sum(grades)/len(grades)
+    dic['Highest']= max(grades)
+    dic['Lowest']=min(grades)
 
     if report:
         match dic['Average']:
@@ -39,6 +33,9 @@ def classAnalysis(grades: list, report= False):
             case a if 9<=a:
                 dic['Report']='Really good'
 
+    avg= f'{dic['Average']:.2f}'
+    dic['Average']= float(avg)
+
     return dic
 
 l=[]
@@ -46,7 +43,7 @@ l=[]
 while True:
     flag= ( (input('Would you like to add another number to your list? (Y/N): ')).strip()).upper()
     if(flag=='N'):
-        rep= input('Would you like to a report of the student average? (Type anything for yes)')
+        rep= input('Would you like to a report of the student average? (Press anything for yes): ')
         break
     elif(flag!='Y'):
         print('That is not a valid option!', end=' ') 
@@ -62,3 +59,4 @@ while True:
     print('Number added successfully!')
 
 print(classAnalysis(l, rep))
+#print(help(classAnalysis))
