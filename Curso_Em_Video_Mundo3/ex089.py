@@ -1,5 +1,5 @@
 #CHALLENGE 89: Class scores
-#GOAL:Write code that receivesthe name of a student and 2 test scores. 
+#GOAL:Write code that receives the name of a student and 2 test scores. 
 #Then, show for each student the mean of their grades, and give the user the option to see the individual scores of each student
 #SKILL: Learning about nested lists
 
