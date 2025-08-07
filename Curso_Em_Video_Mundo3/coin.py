@@ -6,7 +6,7 @@ def coin(value: float, currency: str | None= 'R$'):
     so that it looks like a monetary value
     -> param value: amount of money to be formatted
     -> param currency: The currency that is being used
-    -> return:The amount with two decimal houses after the dot and the currency
+    -> return:The amount with the currency two decimal houses after the dot 
     """
     formated= f'{currency.strip()}{value:.2f}'
     return formated
@@ -68,33 +68,22 @@ def info(value: float, currency:str | None= 'R$', reduce: float | None= 0, incre
 
 def validation():
     """
-    The function validation() is meant to be an upgrade of the method .isnumeric, because it
-    can catch negative numbers and floats. It's also meant to not stop until a number is provided
-    param n-> string to be avaliated if is actually number
+    The function validation() is meant to tell if the user input was a float before type casting
+    in order to avoid throwing errors to the user. It's also meant to not stop until a float number 
+    is provided
+    Param: None
     return: n
     """
-    while (True): 
-        n= input('Type in a monetary amount: ').strip()
-        valid= False 
-        try:
-            n= float(n)
-            valid=True
-            
-        except ValueError:
-            valid=False 
-       
-        if not valid and n.find(',') != -1:
-            n= n.replace(',', '.')
-            try:
-                n= float(n)
-                valid=True
-            
-            except ValueError:
-                valid=False           
-            
-        if not valid:
-            n= print(f'\033[1;31mERROR! "{n}" is not a valid monetary value! \033[0;30m')
-        else:
-            break
+    valid= False 
+    while not valid: 
+        n= (input('Type in a monetary amount: ').strip()).replace(',', '.')
 
-    return float(n)
+        try:
+            n=float(n)
+            valid=True
+
+        except ValueError:
+            print(f'\033[1;31mERROR! "{n}" is not a valid monetary value! \033[m')
+            valid=False
+
+    return n

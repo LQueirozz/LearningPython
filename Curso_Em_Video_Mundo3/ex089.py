@@ -8,7 +8,7 @@ student=[]
 grade=[]
 
 while True:
-    flag= ( (input('Would you like to add another studenr to your list? (Y/N): ')).strip()).upper()
+    flag= ( (input('Would you like to add another student to your list? (Y/N): ')).strip()).upper()
     if(flag=='N'):
         break
     elif(flag!='Y'):
